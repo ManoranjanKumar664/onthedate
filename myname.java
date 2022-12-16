@@ -9,6 +9,11 @@ class myname
    System.out.println("this is my first program on this project");
  }
  
+ void input()
+ {
+// this is only for inputs
+ }
+ 
  public static void main(String []args)
  {
  System.out.println("enter any two no.");
