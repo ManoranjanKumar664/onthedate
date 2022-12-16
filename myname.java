@@ -4,6 +4,11 @@ import java.lang.System;
 class myname
 {
  int a, b, c
+  void show()
+ {
+   System.out.println("this is my first program on this project");
+ }
+ 
  public static void main(String []args)
  {
  System.out.println("enter any two no.");
@@ -13,6 +18,7 @@ class myname
  baskey.b=mano.nextInt();
  baskey.c=baskey.a+baskey.b;
  System.out.prinln("sum="+baskey.c);
+  baskey.show();
  }
  }
  
