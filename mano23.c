@@ -13,7 +13,7 @@ int main()
         puts("file didn't opened");
         exit(1);
     }
-    
+
     for(int i=0;i<strlen(ch);i++)
     {
         fputc(ch[i],mano);
