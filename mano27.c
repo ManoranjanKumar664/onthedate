@@ -3,12 +3,23 @@
 
 typedef struct mano
 {
-    int a, b;
+    int a;
     double d;
 }person;
 
+struct hello
+{
+    int x;
+    int y;
+    int z;
+};
+
 int main()
 {
+    struct hello h1;
+    int a;
+    printf("%d",sizeof(a));
+    printf("\n");
     FILE *p01=fopen("gome02.txt","wb");
     if(p01==NULL)
     {
@@ -17,8 +28,10 @@ int main()
     }
 
     person p1, p2;
+    printf("%d", sizeof(p2));
+    printf("\n");
     p1.a=90;
-    p1.b=49;
+    //p1.b=49;
     p1.d=94.4;
     fwrite(&p1,sizeof(p1),1,p01);
     fclose(p01);
@@ -29,8 +42,9 @@ int main()
         puts("can't open file");
         exit(1);
     }
-    fread(&p2,sizeof(p2),1,p02);
-    printf("%d %d %lf",p2.a, p2.b, p2.d);
+    fread(&p2,16,1,p02);
+    printf("%d %lf",p2.a, p2.d);
+   // printf("%d %d %d",h1.x, h1.y, h1.z);
     fclose(p02);
     return 0;
     
