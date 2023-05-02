@@ -3,7 +3,8 @@
 int main()
 {
     int b=40;
-    printf("%p",&b);
-    printf("%d",b);
+    int c=90;
+    int d=b+c;
+    printf("%d",d);
     return 0;
 }
